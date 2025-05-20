@@ -1,0 +1,99 @@
+* {
+    box-sizing: content-box;
+}
+.header{
+    color: white;
+	margin-top: 0px;
+	width: 100%;
+	height: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 12%;
+    color: azure;
+    float: right;
+}
+body{
+    background-image: url('BackgroundPortfolio.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+li{
+    display:inline;
+    margin-top: 0px;
+    padding-left: 10%;
+    float: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: azure;
+}
+a{
+    color: rgb(225, 236, 236);
+}
+.main{
+	font-family: Lucida Bright;
+	font-size: 40px;
+    text-align: center;
+    float: right;
+    margin-top: 100px;
+    padding-right: 80px;
+    color:azure;
+}
+.content{
+    color: azure;
+    font-size: 30px;
+    float: right;
+    text-align: justify;
+    font-size: 20px;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 900px) {
+    .main, .content, .header, li {
+        float: none !important;
+        display: block !important;
+        text-align: center;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    .main {
+        font-size: 28px;
+        padding-right: 0;
+        margin-top: 60px;
+    }
+    .content {
+        font-size: 18px;
+        padding: 0 20px;
+        text-align: left;
+    }
+    .header, li {
+        font-size: 18px;
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+    .main, .content, .header, li {
+        float: none !important;
+        display: block !important;
+        text-align: center;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    .main {
+        font-size: 20px;
+        margin-top: 30px;
+        padding-right: 0;
+    }
+    .content {
+        font-size: 16px;
+        padding: 0 10px;
+        text-align: left;
+    }
+    .header, li {
+        font-size: 14px;
+    }
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+}
